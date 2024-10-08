@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page Social Book | Coding abdullah</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!---------------- Navbar ------------------>
+    <nav>
+      <div class="nav-left">
+        <a href="index.html">
+          <img src="assets/logo.png" class="logo" />
+        </a>
+        <ul>
+          <li><img src="assets/notification.png" /></li>
+          <li><img src="assets/inbox.png" /></li>
+          <li><img src="assets/video.png" /></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="assets/search.png" />
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+          <img src="assets/profile-pic.png" />
+        </div>
+      </div>
+
+      <!------------- Settings-menu ----------------->
+      <div class="settings-menu">
+        <div id="dark-btn">
+          <span></span>
+        </div>
+
+        <div class="settings-menu-inner">
+          <div class="user-profile">
+            <img src="assets/profile-pic.png" />
+            <div>
+              <p>John Smith</p>
+              <a href="profile.html">See your profile</a>
+            </div>
+          </div>
+          <hr />
+          <div class="user-profile">
+            <img src="assets/feedback.png" />
+            <div>
+              <p>Give Feedback</p>
+              <a href="#">Help us to improve the new design</a>
+            </div>
+          </div>
+          <hr />
+          <div class="settings-links">
+            <img src="assets/setting.png" class="settings-icon" />
+            <a href="#"
+              >Settings & Privacy <img src="assets/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="settings-links">
+            <img src="assets/help.png" class="settings-icon" />
+            <a href="#"
+              >Help & Support <img src="assets/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="settings-links">
+            <img src="assets/display.png" class="settings-icon" />
+            <a href="#"
+              >Display & Accessibility <img src="assets/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="settings-links">
+            <img src="assets/logout.png" class="settings-icon" />
+            <a href="#">Logout <img src="assets/arrow.png" width="10px" /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!------------- Profile-Page ---------------->
+
+    <div class="profile-container">
+      <img src="assets/cover.png" class="cover-img" />
+      <div class="profile-details">
+        <div class="pd-left">
+          <div class="pd-row">
+            <img src="assets/profile.png" class="pd-image" />
+            <div>
+              <h3>Jack Nicholson</h3>
+              <p>150 Friends - 30 mutual</p>
+              <img src="assets/member-1.png" />
+              <img src="assets/member-2.png" />
+              <img src="assets/member-3.png" />
+              <img src="assets/member-4.png" />
+            </div>
+          </div>
+        </div>
+        <div class="pd-right">
+          <button type="button">
+            <img src="assets/add-friends.png" /> Friends
+          </button>
+          <button type="button">
+            <img src="assets/message.png" /> Message
+          </button>
+          <br />
+          <a href=""><img src="assets/more.png" /></a>
+        </div>
+      </div>
+
+      <div class="profile-info">
+        <div class="info-col">
+          <div class="profile-intro">
+            <h3>Intro</h3>
+            <p class="intro-text">
+              Believe in yourself and you can do unbelievable things.
+              <img src="assets/feeling.png" />
+            </p>
+            <hr />
+            <ul>
+              <li>
+                <img src="assets/profile-job.png" /> Director at 100media Ltd
+              </li>
+              <li>
+                <img src="assets/profile-study.png" /> Studied at UCP University
+              </li>
+              <li><img src="assets/profile-study.png" /> Went to DPS Lahore</li>
+              <li>
+                <img src="assets/profile-home.png" /> Lives in Pakistan, Lahore
+              </li>
+              <li>
+                <img src="assets/profile-location.png" /> From Pakistan, Lahore
+              </li>
+            </ul>
+          </div>
+
+          <div class="profile-intro">
+            <div class="title-box">
+              <h3>Photos</h3>
+              <a href="">All Photos</a>
+            </div>
+
+            <div class="photo-box">
+              <div><img src="assets/photo1.png" /></div>
+              <div><img src="assets/photo2.png" /></div>
+              <div><img src="assets/photo3.png" /></div>
+              <div><img src="assets/photo4.png" /></div>
+              <div><img src="assets/photo5.png" /></div>
+              <div><img src="assets/photo6.png" /></div>
+            </div>
+          </div>
+
+          <div class="profile-intro">
+            <div class="title-box">
+              <h3>Friends</h3>
+              <a href="">All Friends</a>
+            </div>
+            <p>130 (20 mutual)</p>
+
+            <div class="friends-box">
+              <div>
+                <img src="assets/member-1.png" />
+                <p>Joseph N</p>
+              </div>
+              <div>
+                <img src="assets/member-2.png" />
+                <p>Nathan N</p>
+              </div>
+              <div>
+                <img src="assets/member-3.png" />
+                <p>George D</p>
+              </div>
+              <div>
+                <img src="assets/member-4.png" />
+                <p>Franics L</p>
+              </div>
+              <div>
+                <img src="assets/member-5.png" />
+                <p>Anthony E</p>
+              </div>
+              <div>
+                <img src="assets/member-6.png" />
+                <p>Micheal B</p>
+              </div>
+              <div>
+                <img src="assets/member-7.png" />
+                <p>Edwared M</p>
+              </div>
+              <div>
+                <img src="assets/member-8.png" />
+                <p>Bradon C</p>
+              </div>
+              <div>
+                <img src="assets/member-9.png" />
+                <p>James Doe</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="post-col">
+          <div class="write-post-container">
+            <div class="user-profile">
+              <img src="assets/profile-pic.png" />
+              <div>
+                <p>John Smith</p>
+                <small>Public <i class="ri-arrow-down-s-fill"></i></small>
+              </div>
+            </div>
+
+            <div class="post-input-container">
+              <textarea
+                rows="3"
+                placeholder="What's on your mind, John Smith?"
+              ></textarea>
+
+              <div class="add-post-links">
+                <a href="#"><img src="assets/live-video.png" /> Live Video</a>
+                <a href="#"><img src="assets/photo.png" /> Photo/Video</a>
+                <a href="#"><img src="assets/feeling.png" /> Feling/Activity</a>
+              </div>
+            </div>
+          </div>
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="assets/profile-pic.png" />
+                <div>
+                  <p>John Smith</p>
+                  <span>June 26 2023, 15:50 am</span>
+                </div>
+              </div>
+              <a href="#"><i class="ri-more-2-fill"></i></a>
+            </div>
+
+            <p class="post-text">
+              Like and share this video with friends, tag
+              <span>@Coding abdullah</span> facebook page on your post. Ask your
+              doubts in the comments <a href="#">#Coding abdullah</a>
+              <a href="#">#YouTubeChannel</a>
+            </p>
+            <img src="assets/feed-image-2.png" class="post-img" />
+
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="assets/like.png" /> 200</div>
+                <div><img src="assets/comments.png" /> 150</div>
+                <div><img src="assets/share.png" /> 50</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="assets/profile-pic.png" />
+                <i class="ri-arrow-down-s-fill"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="assets/profile-pic.png" />
+                <div>
+                  <p>John Smith</p>
+                  <span>June 26 2023, 15:50 am</span>
+                </div>
+              </div>
+              <a href="#"><i class="ri-more-2-fill"></i></a>
+            </div>
+
+            <p class="post-text">
+              Like and share this video with friends, tag
+              <span>@Coding abdullah</span> facebook page on your post. Ask your
+              doubts in the comments <a href="#">#Coding abdullah</a>
+              <a href="#">#YouTubeChannel</a>
+            </p>
+            <img src="assets/feed-image-3.png" class="post-img" />
+
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="assets/like.png" /> 200</div>
+                <div><img src="assets/comments.png" /> 150</div>
+                <div><img src="assets/share.png" /> 50</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="assets/profile-pic.png" />
+                <i class="ri-arrow-down-s-fill"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="assets/profile-pic.png" />
+                <div>
+                  <p>John Smith</p>
+                  <span>June 26 2023, 15:50 am</span>
+                </div>
+              </div>
+              <a href="#"><i class="ri-more-2-fill"></i></a>
+            </div>
+
+            <p class="post-text">
+              Like and share this video with friends, tag
+              <span>@Coding abdullah</span> facebook page on your post. Ask your
+              doubts in the comments <a href="#">#Coding abdullah</a>
+              <a href="#">#YouTubeChannel</a>
+            </p>
+            <img src="assets/feed-image-4.png" class="post-img" />
+
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="assets/like.png" /> 200</div>
+                <div><img src="assets/comments.png" /> 150</div>
+                <div><img src="assets/share.png" /> 50</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="assets/profile-pic.png" />
+                <i class="ri-arrow-down-s-fill"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="assets/profile-pic.png" />
+                <div>
+                  <p>John Smith</p>
+                  <span>June 26 2023, 15:50 am</span>
+                </div>
+              </div>
+              <a href="#"><i class="ri-more-2-fill"></i></a>
+            </div>
+
+            <p class="post-text">
+              Like and share this video with friends, tag
+              <span>@Coding abdullah</span> facebook page on your post. Ask your
+              doubts in the comments <a href="#">#Coding abdullah</a>
+              <a href="#">#YouTubeChannel</a>
+            </p>
+            <img src="assets/feed-image-5.png" class="post-img" />
+
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="assets/like.png" /> 200</div>
+                <div><img src="assets/comments.png" /> 150</div>
+                <div><img src="assets/share.png" /> 50</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="assets/profile-pic.png" />
+                <i class="ri-arrow-down-s-fill"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Copyright &copy; 2024 - Coding abdullah Youtube Channel</p>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
